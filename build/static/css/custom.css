@@ -1,10 +1,12 @@
-@charset "UTF-8";
 /* GENERAL */
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   text-align: left;
   color: #333; }
+
+p {
+  margin: 0; }
 
 .hidden {
   width: 0;
@@ -37,37 +39,68 @@ ul {
 
 /* header */
 header {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), white), url(../assets/images/shenandoah.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah.jpg");
   min-height: 800px; }
   header p {
     font-weight: 400;
     font-size: 20px;
-    margin: 0 0 20px 0; }
+    margin: 0 0 20px; }
 
 /* main */
 main {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), white), url(../assets/images/great-falls.jpg); }
-  main ul#portfolio-item-type {
+  background: linear-gradient(white, rgba(255, 255, 255, 0.6), white), url("../assets/images/great-falls.jpg");
+  background-position: contain; }
+  main ul.portfolio-item-type {
     display: flex; }
-    main ul#portfolio-item-type li {
+    main ul.portfolio-item-type li {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 12px;
       margin: 0 10px 0 0; }
-      main ul#portfolio-item-type li::before {
-        content: '·';
+      main ul.portfolio-item-type li::before {
+        content: '/';
         padding: 0 10px 0 0; }
-  main p.portfolio-item-head {
+  main p {
+    margin: 5px 0 10px; }
+  main p.portfolio-item-head a {
+    color: #BF2929;
     font-weight: 700;
     font-size: 20px;
-    margin: 10px 0;
-    text-decoration: underline;
-    text-decoration-color: #BF2929; }
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    line-height: 1.5em; }
+    main p.portfolio-item-head a span {
+      background-image: linear-gradient(to right, #BF2929 0%, #BF2929 100%);
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+      background-size: 100% 2px;
+      transition: position 0.5s ease; }
+    main p.portfolio-item-head a:visited {
+      color: inherit; }
+    main p.portfolio-item-head a:hover {
+      color: #BF2929; }
+  main .portfolio-item-head:hover a::after {
+    width: 90%;
+    transition: 0.3s ease all; }
   main p.portfolio-item-sub {
     font-weight: 400;
-    font-size: 20px;
-    margin: 0 0 20px 0; }
+    font-size: 16px;
+    margin: 0 0 20px; }
 
 /* footer */
 footer {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), white), url(../assets/images/canyonlands.jpg); }
+  background: linear-gradient(white, rgba(255, 255, 255, 0.8), white), url("../assets/images/canyonlands.jpg");
+  min-height: 600px; }
+  footer ul#social {
+    width: 100%;
+    max-width: 360px; }
+    footer ul#social li {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0; }
+      footer ul#social li svg {
+        fill: #333;
+        width: 20px;
+        margin-right: 30px; }

@@ -8,11 +8,13 @@ $copy-width: 400px;
 $regular-font: 20px;
 $large-font: 25px;
 /* GENERAL */
+
 body {
     margin: 0;
     font-family: $sans;
     text-align: left;
     color: $dark;
+    width: 100%;
 }
 
 p {
@@ -45,6 +47,11 @@ ul {
     height: auto;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    @media only screen and (max-width: 786px) {
+        justify-content: center;
+    }
 }
 
 .content-container {
@@ -52,6 +59,11 @@ ul {
     flex-direction: column;
     max-width: $copy-width;
     padding: 100px 0 100px 20%;
+
+    @media only screen and (max-width: 786px) {
+        padding: 100px 0;
+        max-width: 80%;
+    }
 }
 /* header */
 header {
@@ -68,7 +80,17 @@ header {
 /* main */
 main {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/great-falls.jpg");
-    background-position: contain;
+    background-size: contain !important;
+
+    .content-container {
+        width: 100%;
+        padding: 0 0 100px 20%;
+
+        @media only screen and (max-width: 786px) {
+            padding: 0 0 100px 0;
+            max-width: 80%;
+        }
+    }
 
     ul.portfolio-item-type {
         display: flex;
@@ -91,7 +113,6 @@ main {
     }
 
     p.portfolio-item-head a {
-        color: $accent;
         font-weight: $medium-weight;
         font-size: $regular-font;
         text-decoration: none;
@@ -100,20 +121,23 @@ main {
         line-height: 1.5em;
 
         span {
-            background-image: linear-gradient(to right, $accent 0%, $accent 100%);
-            background-repeat: repeat-x; // make it horizontal
-            background-position: 0 100%; // change the second value to adjust how far from the top the underline should be
-            background-size: 100% 2px; // change the second value to the desired height of the underline
-            transition: position 0.5s ease;
+          width: calc(100%); // fix for IE
+          background-image: linear-gradient(transparent calc(100% - 2px), $accent 10px);
+          background-repeat: no-repeat;
+          background-size: 0% 100%;
+          transition: background-size 1s, color 1s;
+
+          &:hover {
+              background-size: 100% 100%;
+              background-image: linear-gradient(transparent calc(100% - 2px), $accent 10px);
+
+          }
         }
 
         &:visited {
             color: inherit;
         }
 
-        &:hover {
-            color: $accent;
-        }
     }
 
     .portfolio-item-head:hover a::after {

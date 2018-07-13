@@ -3,7 +3,8 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  color: #333; }
+  color: #333;
+  width: 100%; }
 
 p {
   margin: 0; }
@@ -29,13 +30,22 @@ ul {
 .background-container {
   height: auto;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; }
+  @media only screen and (max-width: 786px) {
+    .background-container {
+      justify-content: center; } }
 
 .content-container {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   padding: 100px 0 100px 20%; }
+  @media only screen and (max-width: 786px) {
+    .content-container {
+      padding: 100px 0;
+      max-width: 80%; } }
 
 /* header */
 header {
@@ -49,7 +59,14 @@ header {
 /* main */
 main {
   background: linear-gradient(white, rgba(255, 255, 255, 0.6), white), url("../assets/images/great-falls.jpg");
-  background-position: contain; }
+  background-size: contain !important; }
+  main .content-container {
+    width: 100%;
+    padding: 0 0 100px 20%; }
+    @media only screen and (max-width: 786px) {
+      main .content-container {
+        padding: 0 0 100px 0;
+        max-width: 80%; } }
   main ul.portfolio-item-type {
     display: flex; }
     main ul.portfolio-item-type li {
@@ -63,7 +80,6 @@ main {
   main p {
     margin: 5px 0 10px; }
   main p.portfolio-item-head a {
-    color: #BF2929;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -71,15 +87,16 @@ main {
     display: inline-block;
     line-height: 1.5em; }
     main p.portfolio-item-head a span {
-      background-image: linear-gradient(to right, #BF2929 0%, #BF2929 100%);
-      background-repeat: repeat-x;
-      background-position: 0 100%;
-      background-size: 100% 2px;
-      transition: position 0.5s ease; }
+      width: calc(100%);
+      background-image: linear-gradient(transparent calc(100% - 2px), #BF2929 10px);
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      transition: background-size 1s, color 1s; }
+      main p.portfolio-item-head a span:hover {
+        background-size: 100% 100%;
+        background-image: linear-gradient(transparent calc(100% - 2px), #BF2929 10px); }
     main p.portfolio-item-head a:visited {
       color: inherit; }
-    main p.portfolio-item-head a:hover {
-      color: #BF2929; }
   main .portfolio-item-head:hover a::after {
     width: 90%;
     transition: 0.3s ease all; }

@@ -1,14 +1,15 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var useref = require('gulp-useref');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const babel = require('gulp-babel');
+const browserSync = require('browser-sync').create();
+const useref = require('gulp-useref');
 // minifies js
-var uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 // checks if certain file type
-var cssnano = require('gulp-cssnano');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var runSequence = require('run-sequence');
+const cssnano = require('gulp-cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const runSequence = require('run-sequence');
 
 /*******************************************************************************
 DEVELOPMENT TASKS
@@ -16,10 +17,19 @@ DEVELOPMENT TASKS
 
 // runs all development tasks in order listed with the 'gulp' command (default)
 gulp.task('default', function(callback) {
-    runSequence(['sass', 'browserSync', 'watch'],
+    runSequence(['sass', 'babel', 'browserSync', 'watch'],
         callback
     );
 });
+
+// haven't fixed this, needs es6version for linter among other things
+gulp.task('babel', () =>
+    gulp.src('build/static/scripts/custom.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('build/static/scripts/custom-test.js'))
+);
 
 // reloads browser on file save
 gulp.task('browserSync', function() {

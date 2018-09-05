@@ -74,7 +74,7 @@ main {
       text-transform: uppercase;
       font-size: 12px;
       margin: 0 10px 0 0; }
-      main ul.portfolio-item-type li::before {
+      main ul.portfolio-item-type li:not(:first-child):before {
         content: '/';
         padding: 0 10px 0 0; }
   main p {

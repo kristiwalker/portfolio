@@ -1,0 +1,22 @@
+[
+    {
+        "type": [
+            "D3",
+            "map",
+            "interactive"
+        ],
+        "head": "Middle East Africa leads in share of official religions",
+        "sub": "Explore countries by state religion status",
+        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
+    },
+    {
+        "type": [
+            "D3",
+            "map",
+            "interactive"
+        ],
+        "head": "Middle East Africa leads in share of official religions",
+        "sub": "Explore countries by state religion status",
+        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
+    }
+]

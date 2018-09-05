@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 var request = new XMLHttpRequest();
 request.open('GET', 'static/assets/data/portfolio-items.json', true);
 

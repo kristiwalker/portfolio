@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
@@ -22,13 +24,12 @@ gulp.task('default', function(callback) {
     );
 });
 
-// haven't fixed this, needs es6version for linter among other things
 gulp.task('babel', () =>
     gulp.src('build/static/scripts/custom.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(gulp.dest('build/static/scripts/custom-test.js'))
+        .pipe(gulp.dest('build/static/scripts/babel'))
 );
 
 // reloads browser on file save

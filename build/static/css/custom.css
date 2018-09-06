@@ -59,7 +59,7 @@ header {
 /* main */
 main {
   background: linear-gradient(white, rgba(255, 255, 255, 0.6), white), url("../assets/images/great-falls.jpg");
-  background-size: contain !important; }
+  background-position: center; }
   main .content-container {
     width: 100%;
     padding: 0 0 100px 20%; }
@@ -92,13 +92,14 @@ main {
     line-height: 1.5em; }
     main p.portfolio-item-head a span {
       width: calc(100%);
-      background-image: linear-gradient(transparent calc(100% - 2px), #BF2929 10px);
+      background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
       background-repeat: no-repeat;
       background-size: 0% 100%;
-      transition: background-size 1s, color 1s; }
+      transition: background-size 1s, color 1s;
+      color: #BF2929; }
       main p.portfolio-item-head a span:hover {
         background-size: 100% 100%;
-        background-image: linear-gradient(transparent calc(100% - 2px), #BF2929 10px); }
+        background-image: linear-gradient(transparent calc(100% - 2px), black 10px); }
     main p.portfolio-item-head a:visited {
       color: inherit; }
   main .portfolio-item-head:hover a::after {

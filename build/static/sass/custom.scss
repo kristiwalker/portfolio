@@ -80,7 +80,7 @@ header {
 /* main */
 main {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/great-falls.jpg");
-    background-size: contain !important;
+    background-position: center;
 
     .content-container {
         width: 100%;
@@ -130,14 +130,15 @@ main {
 
         span {
           width: calc(100%); // fix for IE
-          background-image: linear-gradient(transparent calc(100% - 2px), $accent 10px);
+          background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
           background-repeat: no-repeat;
           background-size: 0% 100%;
           transition: background-size 1s, color 1s;
+          color: $accent;
 
           &:hover {
               background-size: 100% 100%;
-              background-image: linear-gradient(transparent calc(100% - 2px), $accent 10px);
+              background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
 
           }
         }

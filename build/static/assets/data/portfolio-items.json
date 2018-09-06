@@ -1,23 +1,50 @@
 [
     {
-        "type": [
-            "D3",
-            "map",
-            "interactive"
-        ],
+        "types": "Scrollytelling data essay & illustration",
+        "head": "Strong men, caring women",
+        "sub": "How Americans describe what society values (and doesn’t) in each gender",
+        "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
+    },
+    {
+        "types": "Interactive Map Embed",
         "head": "Middle East Africa leads in share of official religions",
         "sub": "Explore countries by state religion status",
         "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
-        "type": [
-            "D3",
-            "Data viz",
-            "Scrollytelling",
-            "Interactive"
-        ],
-        "head": "Strong men, caring women",
-        "sub": "How Americans describe what society values (and doesn’t) in each gender",
-        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
+        "types": "Feature design",
+        "head": "The helmet conundrum",
+        "sub": "The ultimate symbol of football doesn’t offer the ultimate in protection, and there are no simple answers to the biggest threat to the future of high school football",
+        "url": "http://interactives.dallasnews.com/2016/concussions/"
+    },
+    {
+        "types": "Interactive map application",
+        "head": "Dallas' hidden history",
+        "sub": "For too long, the history of Dallas’ white majority has overpowered the stories of others who helped build the city’s culture",
+        "url": "https://interactives.dallasnews.com/2017/dallas-hidden-history/"
+    },
+    {
+        "types": "Feature design, illustration & graphics",
+        "head": "The rise and fall of the 'frack master'",
+        "sub": "How a Dallas tech CEO became an expert on hydraulic fracturing to a global audience",
+        "url": "http://interactives.dallasnews.com/2016/frack-master/"
+    },
+    {
+        "types": "Interactive chart embed",
+        "head": "The 100 highest-paid CEOs in Dallas-Fort Worth",
+        "sub": "Their median pay package totaled $4.07 million last year — a 1% increase",
+        "url": "http://interactives.dallasnews.com/2016/ceo-pay/"
+    },
+    {
+        "types": "Interactive feature design",
+        "head": "Comfort is golden",
+        "sub": "Meet the retrievers brought to Dallas to help us cope after the downtown ambush",
+        "url": "http://interactives.dallasnews.com/2016/comfort-dogs/"
+    },
+    {
+        "types": "Interactive feature design",
+        "head": "From farm to your table",
+        "sub": "Chef Graham Dodds shares a menu that celebrates summer with the bounty of North Texas producers",
+        "url": "http://interactives.dallasnews.com/2016/farm-to-table/"
     }
 ]

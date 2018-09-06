@@ -7,17 +7,11 @@ request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
     // Success!
     var portfolioItems = JSON.parse(request.responseText);
-    //
-    // for (var item in portfolioItems) {
-    //     var object = portfolioItems[item];
-    //     console.log(object.type);
-    //
-    // }
 
-    const markup = `${portfolioItems.map((item, i) =>
+    const markup = `${portfolioItems.map(item =>
         `<li class="portfolio-item">
            <ul class="portfolio-item-type">
-               <li>${item.type}</li>
+            <li>${item.types}</li>
            </ul>
            <p class="portfolio-item-head">
                <a href="${item.url}"><span>${item.head}</span></a>

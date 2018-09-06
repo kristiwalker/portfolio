@@ -24,14 +24,6 @@ gulp.task('default', function(callback) {
     );
 });
 
-gulp.task('babel', () =>
-    gulp.src('build/static/scripts/custom.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(gulp.dest('build/static/scripts/babel'))
-);
-
 // reloads browser on file save
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -52,6 +44,17 @@ gulp.task('sass', function() {
             stream: true
         }));
 });
+
+gulp.task('babel', () =>
+    gulp.src('build/static/scripts/custom.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('build/static/scripts/babel'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+);
 
 gulp.task('watch', function() {
     gulp.watch('build/static/sass/**/*.scss', ['sass']);

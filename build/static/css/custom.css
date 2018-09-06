@@ -67,6 +67,10 @@ main {
       main .content-container {
         padding: 0 0 100px 0;
         max-width: 80%; } }
+  main ul {
+    display: block; }
+  main ul li {
+    margin-bottom: 50px; }
   main ul.portfolio-item-type {
     display: flex; }
     main ul.portfolio-item-type li {

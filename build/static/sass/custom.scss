@@ -92,6 +92,14 @@ main {
         }
     }
 
+    ul {
+      display: block;
+    }
+
+    ul li {
+      margin-bottom: 50px;
+    }
+
     ul.portfolio-item-type {
         display: flex;
 

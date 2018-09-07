@@ -113,7 +113,7 @@ gulp.task('useref', function() {
   return gulp.src('build/*.html')
     .pipe(useref())
     // minifies only if it's a JS file
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('./**/*.js', uglify()))
     // minifies only if it's a CSS file
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('prod'));

@@ -72,6 +72,11 @@ PRODUCTION TASKS
 *******************************************************************************/
 
 // sequences build task to run after production tasks
+gulp.task('build', function(callback) {
+  // build pls
+});
+
+// sequences build task to run after production tasks
 gulp.task('prod', function(callback) {
   // runs each task in order listed
   runSequence('clean:prod', ['sass', 'useref', 'uglifyScripts', 'minifyStyles'],
@@ -87,6 +92,7 @@ gulp.task('uglifyScripts', function() {
     // Output
     .pipe(gulp.dest('./prod'));
 });
+
 
 // Gulp task to minify CSS files
 gulp.task('minifyStyles', function() {

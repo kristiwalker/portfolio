@@ -2,7 +2,7 @@
 
 /*jshint esversion: 6 */
 var request = new XMLHttpRequest();
-request.open('GET', 'static/assets/data/portfolio-items.json', true);
+request.open('GET', 'assets/data/portfolio-items.json', true);
 
 request.onload = function () {
   if (request.status >= 200 && request.status < 400) {

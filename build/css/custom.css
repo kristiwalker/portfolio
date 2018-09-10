@@ -55,14 +55,20 @@ header {
     font-weight: 400;
     font-size: 20px;
     margin: 0 0 20px; }
+  @media only screen and (max-width: 786px) {
+    header {
+      background-position: top; } }
 
 /* main */
 main {
-  background: linear-gradient(white, rgba(255, 255, 255, 0.6), white), url("../assets/images/great-falls.jpg");
+  background: linear-gradient(white, rgba(255, 255, 255, 0.85), white), url("../assets/images/great-falls.jpg");
   background-position: center; }
+  @media only screen and (max-width: 786px) {
+    main {
+      background: none !important; } }
   main .content-container {
-    width: 100%;
-    padding: 0 0 100px 20%; }
+    padding: 0 0 100px 20%;
+    display: inline-block; }
     @media only screen and (max-width: 786px) {
       main .content-container {
         padding: 0 0 100px 0;
@@ -123,6 +129,9 @@ footer {
       flex-direction: row;
       padding: 0; }
       footer ul#social li svg {
-        fill: #333;
+        fill: s;
         width: 20px;
         margin-right: 30px; }
+        footer ul#social li svg:hover {
+          fill: #BF2929;
+          transition: 0.3s ease all; }

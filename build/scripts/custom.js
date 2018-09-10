@@ -14,22 +14,14 @@ request.onload = function() {
             <li>${item.types}</li>
            </ul>
            <p class="portfolio-item-head">
-               <a href="${item.url}"><span>${item.head}</span></a>
+               <a href="${item.url}" target="_blank"><span>${item.head}</span></a>
            </p>
            <p class="portfolio-item-sub">${item.sub}</p>
        </li>`
      ).join('')}`;
 
     document.querySelector('.portfolio').innerHTML = markup;
-
-
-  } else {
-    // We reached our target server, but it returned an error
   }
-};
-
-request.onerror = function() {
-  // There was a connection error of some sort
 };
 
 request.send();

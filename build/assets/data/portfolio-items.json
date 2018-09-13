@@ -1,38 +1,38 @@
 [
     {
-        "types": "Scrollytelling data essay & illustration",
+        "types": "Scrollytelling, data viz & illustration",
         "head": "Strong men, caring women",
-        "sub": "How Americans describe what society values (and doesn’t) in each gender",
+        "sub": "Americans describe what society values (and doesn’t) in each gender in this interactive data essay",
         "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
-    },
-    {
-        "types": "Interactive Map Embed",
-        "head": "Middle East Africa leads in share of official religions",
-        "sub": "Explore countries by state religion status",
-        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
         "types": "Feature design",
         "head": "The helmet conundrum",
-        "sub": "The ultimate symbol of football doesn’t offer the ultimate in protection, and there are no simple answers to the biggest threat to the future of high school football",
+        "sub": "A chaptered sports investigation that looks into the biggest threat to the future of high school football",
         "url": "http://interactives.dallasnews.com/2016/concussions/"
     },
     {
         "types": "Interactive map application",
         "head": "Dallas' hidden history",
-        "sub": "For too long, the history of Dallas’ white majority has overpowered the stories of others who helped build the city’s culture",
+        "sub": "The community shares forgotten stories of those who helped build the city’s culture using this interactive map",
         "url": "https://interactives.dallasnews.com/2017/dallas-hidden-history/"
     },
     {
-        "types": "Feature design, illustration & graphics",
+        "types": "Feature design, illustration & data viz",
         "head": "The rise and fall of the 'frack master'",
-        "sub": "How a Dallas tech CEO became an expert on hydraulic fracturing to a global audience",
+        "sub": "A chaptered, long-form reveal of how a Dallas tech CEO became a global expert on hydraulic fracturing",
         "url": "http://interactives.dallasnews.com/2016/frack-master/"
+    },
+    {
+        "types": "Interactive Map Embed",
+        "head": "Middle East Africa leads in share of official religions",
+        "sub": "A visual lookup of countries by state religion status",
+        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
         "types": "Interactive chart embed",
         "head": "The 100 highest-paid CEOs in Dallas-Fort Worth",
-        "sub": "Their median pay package totaled $4.07 million last year — a 1% increase",
+        "sub": "Their median pay package totaled $4.07 million last year — See who's on the list in this D3 graphic",
         "url": "http://interactives.dallasnews.com/2016/ceo-pay/"
     },
     {
@@ -44,7 +44,7 @@
     {
         "types": "Interactive feature design",
         "head": "From farm to your table",
-        "sub": "Chef Graham Dodds shares a menu that celebrates summer with the bounty of North Texas producers",
+        "sub": "Explore locally-sourced dishes by Chef Graham Dodds on this interactive recipe page",
         "url": "http://interactives.dallasnews.com/2016/farm-to-table/"
     }
 ]

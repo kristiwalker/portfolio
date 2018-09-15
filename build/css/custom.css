@@ -21,7 +21,8 @@ p {
 
 .weighted {
   font-weight: 800;
-  font-size: 22px; }
+  font-size: 22px;
+  padding: 0; }
 
 .accented {
   color: #BF2929; }
@@ -79,6 +80,9 @@ header {
     font-weight: 400;
     font-size: 18px;
     margin: 0 0 20px; }
+    @media only screen and (max-width: 768px) {
+      header p {
+        padding-right: 30px; } }
 
 /* main */
 main {

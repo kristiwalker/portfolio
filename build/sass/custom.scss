@@ -37,6 +37,7 @@ p {
 .weighted {
     font-weight: $heavy-weight;
     font-size: $large-font;
+    padding: 0;
 }
 
 .accented {
@@ -100,6 +101,10 @@ header {
         font-weight: $regular-weight;
         font-size: $regular-font;
         margin: 0 0 20px;
+
+        @media only screen and (max-width: 768px) {
+          padding-right: 30px;
+        }
     }
 
 }

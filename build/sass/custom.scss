@@ -5,8 +5,8 @@ $heavy-weight: 800;
 $accent: #BF2929;
 $dark: #333;
 $copy-width: 400px;
-$regular-font: 20px;
-$large-font: 24px;
+$regular-font: 18px;
+$large-font: 22px;
 $imgSizes: 2400 1800 1200;
 /* GENERAL */
 
@@ -91,6 +91,10 @@ header {
     }
 
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-1200.jpg");
+
+    @media only screen and (max-width: 768px) {
+      min-height: 300px;
+    }
 
     p {
         font-weight: $regular-weight;

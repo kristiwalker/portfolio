@@ -21,7 +21,7 @@ p {
 
 .weighted {
   font-weight: 800;
-  font-size: 24px; }
+  font-size: 22px; }
 
 .accented {
   color: #BF2929; }
@@ -72,9 +72,12 @@ header {
   @media only screen and (min-width: 600px) and (max-width: 900px) {
     header {
       background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-1200.jpg"); } }
+  @media only screen and (max-width: 768px) {
+    header {
+      min-height: 300px; } }
   header p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 20px; }
 
 /* main */
@@ -124,7 +127,7 @@ main {
     margin: 5px 0 10px; }
   main p.portfolio-item-head a {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     position: relative;
     display: inline-block;

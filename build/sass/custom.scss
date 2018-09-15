@@ -6,7 +6,8 @@ $accent: #BF2929;
 $dark: #333;
 $copy-width: 400px;
 $regular-font: 20px;
-$large-font: 25px;
+$large-font: 24px;
+$imgSizes: 2400 1800 1200;
 /* GENERAL */
 
 body {
@@ -15,6 +16,11 @@ body {
     text-align: left;
     color: $dark;
     width: 100%;
+    background: white;
+
+    @media only screen and (min-width: 1500px) {
+      background: $dark;
+    }
 }
 
 p {
@@ -59,6 +65,7 @@ ul {
     flex-direction: column;
     max-width: $copy-width;
     padding: 100px 0 100px 20%;
+    width: 100%;
 
     @media only screen and (max-width: 786px) {
         padding: 100px 0;
@@ -67,8 +74,18 @@ ul {
 }
 /* header */
 header {
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-1200.jpg");
     min-height: 800px;
+    background-position: top;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @each $imgSize in $imgSizes {
+      @media only screen and (min-width: #{$imgSize}) {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-#{$imgSize / 2}.jpg");
+      }
+    }
 
     p {
         font-weight: $regular-weight;
@@ -76,25 +93,33 @@ header {
         margin: 0 0 20px;
     }
 
-    @media only screen and (max-width: 786px) {
-      background-position: top;
-    }
-
 }
 // end header
 /* main */
 main {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url("../assets/images/great-falls.jpg");
     background-position: center;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: 1500px) {
+      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/great-falls/great-falls-3000.jpg");
+    }
+
+    @each $imgSize in $imgSizes {
+      @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/great-falls/great-falls-#{$imgSize}.jpg");
+      }
+    }
 
     @media only screen and (max-width: 786px) {
         background: none !important;
     }
 
     .content-container {
-        // width: 50%;
         padding: 0 0 100px 20%;
         display: inline-block;
+        width: 100%;
 
         @media only screen and (max-width: 786px) {
             padding: 0 0 100px 0;
@@ -173,8 +198,23 @@ main {
 // end main
 /* footer */
 footer {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("../assets/images/canyonlands.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg");
     min-height: 600px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @each $imgSize in $imgSizes {
+      @media only screen and (min-width: #{$imgSize}px) {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-#{$imgSize / 2}.jpg");
+      }
+    }
+
+    @media only screen and (max-width: 786px) {
+      &.background-container {
+        background-position: left;
+      }
+    }
 
     ul#social {
         width: 100%;

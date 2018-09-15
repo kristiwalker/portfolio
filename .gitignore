@@ -1,1 +1,1 @@
-build/assets/images/canyonlands/*.psd
+build/assets/images/**/*.psd

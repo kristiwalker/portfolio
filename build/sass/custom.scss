@@ -74,16 +74,19 @@ ul {
 }
 /* header */
 header {
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-1200.jpg");
     min-height: 800px;
     background-position: top;
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 
+    @media only screen and (min-width: 1500px) {
+      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-3000.jpg");
+    }
+
     @each $imgSize in $imgSizes {
-      @media only screen and (min-width: #{$imgSize}) {
-        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-#{$imgSize / 2}.jpg");
+      @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-#{$imgSize}.jpg");
       }
     }
 
@@ -198,15 +201,18 @@ main {
 // end main
 /* footer */
 footer {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg");
     min-height: 600px;
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 
+    @media only screen and (min-width: 1500px) {
+      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg");
+    }
+
     @each $imgSize in $imgSizes {
-      @media only screen and (min-width: #{$imgSize}px) {
-        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-#{$imgSize / 2}.jpg");
+      @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-#{$imgSize}.jpg");
       }
     }
 

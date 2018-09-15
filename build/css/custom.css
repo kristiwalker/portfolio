@@ -54,21 +54,23 @@ ul {
 
 /* header */
 header {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-1200.jpg");
   min-height: 800px;
   background-position: top;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto; }
-  @media only screen and (min-width: 2400) {
+  @media only screen and (min-width: 1500px) {
+    header {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-3000.jpg"); } }
+  @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    header {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-2400.jpg"); } }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    header {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-1800.jpg"); } }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
     header {
       background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-1200.jpg"); } }
-  @media only screen and (min-width: 1800) {
-    header {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-900.jpg"); } }
-  @media only screen and (min-width: 1200) {
-    header {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/shenandoah/shenandoah-600.jpg"); } }
   header p {
     font-weight: 400;
     font-size: 20px;
@@ -148,20 +150,22 @@ main {
 
 /* footer */
 footer {
-  background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg");
   min-height: 600px;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto; }
-  @media only screen and (min-width: 2400px) {
+  @media only screen and (min-width: 1500px) {
+    footer {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg"); } }
+  @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    footer {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-2400.jpg"); } }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    footer {
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1800.jpg"); } }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
     footer {
       background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg"); } }
-  @media only screen and (min-width: 1800px) {
-    footer {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-900.jpg"); } }
-  @media only screen and (min-width: 1200px) {
-    footer {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-600.jpg"); } }
   @media only screen and (max-width: 786px) {
     footer.background-container {
       background-position: left; } }

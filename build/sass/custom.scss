@@ -31,8 +31,8 @@ $light: #666;
 
 $copy-width: 400px;
 
-$regular-font: 18px;
-$large-font: 22px;
+$regular-font: 1.8em;
+$large-font: 2.2em;
 
 $imgSizes: 2400 1800 1200;
 
@@ -46,6 +46,7 @@ body {
   color: $light;
   width: 100%;
   background: white;
+  font-size: 10px;
   @media only screen and (min-width: 1500px) {
     background: $dark;
   }
@@ -153,9 +154,6 @@ header p {
   font-weight: $regular-weight;
   font-size: $regular-font;
   margin: 0 0 20px;
-  @media only screen and (max-width: $mobile) {
-    padding-right: 30px;
-  }
 }
 /*------------------------------------*\
   #MAIN
@@ -213,7 +211,7 @@ ul.portfolio-item-type {
   li {
     font-weight: $medium-weight;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2em;
     margin: 0;
     color: $dark;
 
@@ -225,14 +223,17 @@ ul.portfolio-item-type {
 }
 
 p.portfolio-item-head a {
+  cursor: pointer;
   font-weight: $medium-weight;
   font-size: $regular-font;
   text-decoration: none;
   position: relative;
   display: inline-block;
   line-height: 1.3em;
+  z-index: 2;
 
   span {
+    cursor: pointer;
     width: calc(100%); // fix for IE
     // animates out black underline after hover
     background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
@@ -240,8 +241,10 @@ p.portfolio-item-head a {
     background-size: 0 100%;
     transition: background-size 1s, color 1s;
     color: $accent;
+    z-index: 1;
 
     &:hover {
+      cursor: pointer;
       // animates in black underline
       background-size: 100% 100%;
       background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
@@ -260,7 +263,7 @@ p.portfolio-item-head a {
 
 p.portfolio-item-sub {
   font-weight: $regular-weight;
-  font-size: 16px;
+  font-size: $regular-font - 0.2em;
   margin: 0 0 20px;
   line-height: 1.3em;
 }
@@ -312,6 +315,7 @@ footer ul li svg {
   margin-right: 30px;
 
   &:hover {
+    z-index: 2;
     cursor: pointer;
     fill: $accent;
     transition: 0.3s ease all;

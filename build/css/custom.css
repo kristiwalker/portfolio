@@ -25,7 +25,8 @@ body {
   text-align: left;
   color: #666;
   width: 100%;
-  background: white; }
+  background: white;
+  font-size: 10px; }
   @media only screen and (min-width: 1500px) {
     body {
       background: #333; } }
@@ -44,7 +45,7 @@ ul {
 
 .weighted {
   font-weight: 800;
-  font-size: 22px;
+  font-size: 2.2em;
   padding: 0;
   color: #333; }
 
@@ -119,11 +120,8 @@ header {
 
 header p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8em;
   margin: 0 0 20px; }
-  @media only screen and (max-width: 425px) {
-    header p {
-      padding-right: 30px; } }
 
 /*------------------------------------*\
   #MAIN
@@ -176,7 +174,7 @@ ul.portfolio-item-type {
   ul.portfolio-item-type li {
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2em;
     margin: 0;
     color: #333; }
     ul.portfolio-item-type li:not(:first-child):before {
@@ -184,20 +182,25 @@ ul.portfolio-item-type {
       padding: 0 10px 0 0; }
 
 p.portfolio-item-head a {
+  cursor: pointer;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8em;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  z-index: 2; }
   p.portfolio-item-head a span {
+    cursor: pointer;
     width: calc(100%);
     background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
     background-repeat: no-repeat;
     background-size: 0 100%;
     transition: background-size 1s, color 1s;
-    color: #BF2929; }
+    color: #BF2929;
+    z-index: 1; }
     p.portfolio-item-head a span:hover {
+      cursor: pointer;
       background-size: 100% 100%;
       background-image: linear-gradient(transparent calc(100% - 2px), black 10px); }
   p.portfolio-item-head a:visited {
@@ -209,7 +212,7 @@ p.portfolio-item-head a {
 
 p.portfolio-item-sub {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6em;
   margin: 0 0 20px;
   line-height: 1.3em; }
 
@@ -257,6 +260,7 @@ footer ul li svg {
   width: 20px;
   margin-right: 30px; }
   footer ul li svg:hover {
+    z-index: 2;
     cursor: pointer;
     fill: #BF2929;
     transition: 0.3s ease all; }

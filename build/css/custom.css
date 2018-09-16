@@ -27,9 +27,6 @@ body {
   width: 100%;
   background: white;
   font-size: 10px; }
-  @media only screen and (min-width: 1500px) {
-    body {
-      background: #333; } }
 
 p {
   margin: 0; }
@@ -79,13 +76,13 @@ ul {
 header {
   min-height: 800px;
   background-position: top;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-1200.jpg"); }
   @media only screen and (min-width: 1500px) {
     header {
-      background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-3000.jpg"); } }
+      background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-3000.jpg");
+      min-height: 1300px; } }
   @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     header {
       background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-2400.jpg"); } }
@@ -128,12 +125,13 @@ header p {
 \*------------------------------------*/
 main {
   background-position: center;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (min-width: 1500px) {
     main {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.85), white), url("../assets/images/great-falls/great-falls-3000.jpg"); } }
+      background: linear-gradient(white, rgba(255, 255, 255, 0.85), white), url("../assets/images/great-falls/great-falls-3000.jpg");
+      min-height: 2000px;
+      align-items: center; } }
   @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     main {
       background: linear-gradient(white, rgba(255, 255, 255, 0.85), white), url("../assets/images/great-falls/great-falls-2400.jpg"); } }
@@ -221,13 +219,13 @@ p.portfolio-item-sub {
 \*------------------------------------*/
 footer {
   min-height: 600px;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg"); }
   @media only screen and (min-width: 1500px) {
     footer {
-      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg"); } }
+      background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg");
+      min-height: 800px; } }
   @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     footer {
       background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-2400.jpg"); } }

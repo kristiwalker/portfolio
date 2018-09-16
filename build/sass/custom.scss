@@ -47,9 +47,6 @@ body {
   width: 100%;
   background: white;
   font-size: 10px;
-  @media only screen and (min-width: 1500px) {
-    background: $dark;
-  }
 }
 
 p {
@@ -106,12 +103,12 @@ ul {
 header {
   min-height: 800px;
   background-position: top;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-3000.jpg");
+    min-height: 1300px;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {
@@ -160,12 +157,13 @@ header p {
 \*------------------------------------*/
 main {
   background-position: center;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url("../assets/images/great-falls/great-falls-3000.jpg");
+    min-height: 2000px;
+    align-items: center;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {
@@ -272,12 +270,12 @@ p.portfolio-item-sub {
 \*------------------------------------*/
 footer {
   min-height: 600px;
-  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg");
+    min-height: 800px;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {

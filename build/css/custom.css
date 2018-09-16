@@ -73,6 +73,8 @@ header {
   @media only screen and (min-width: 600px) and (max-width: 900px) {
     header {
       background: linear-gradient(rgba(255, 255, 255, 0.6), white), url("../assets/images/shenandoah/shenandoah-1200.jpg"); } }
+  header.no-bg {
+    background: none; }
   @media only screen and (max-width: 768px) {
     header {
       min-height: 300px; } }

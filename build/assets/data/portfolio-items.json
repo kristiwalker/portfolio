@@ -1,26 +1,26 @@
 [
     {
         "types": "Scrollytelling, data viz & illustration",
-        "head": "Strong men, caring women",
-        "sub": "Americans describe what society values (and doesn’t) in each gender in this interactive data essay",
+        "head": "How Americans describe what society values (and doesn’t) in each gender",
+        "sub": "This project challenged me as a designer, developer and storyteller.<br><br> Ensuring that the writing and visual flow were seamless, I introduced <a href='https://www.figma.com/'>Figma</a> as a new tool and workflow for the project's writer, data scientist and editors, who could write within the designs and iterate alongside me in live time.<br><br> I also learned to write custom, animated <a href='https://d3js.org/'>d3.js</a> charts from scratch to build this data visualization. And I taught myself <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> to check for scrolling and visibility interactions.<br><br>",
         "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
-    },
-    {
-        "types": "Feature design",
-        "head": "The helmet conundrum",
-        "sub": "A chaptered sports investigation that looks into the biggest threat to the future of high school football",
-        "url": "http://interactives.dallasnews.com/2016/concussions/"
     },
     {
         "types": "Interactive map application",
         "head": "Dallas' hidden history",
-        "sub": "The community shares forgotten stories of those who helped build the city’s culture using this interactive map",
+        "sub": "Inspired by Google's 2016 UI designs and excited to experiment with node.js and <a href='https://www.mapbox.com/mapbox-gl-js/api/'>Mapbox's API</a>, I stepped up to build this map application requested by the Dallas Morning News opinion desk.<br><br> I had never created anything with user input (nor anything that had a back-end approval UI) so imagining use-case scenarios and planning for the dynamic nature of the page was an exciting exercise.",
         "url": "https://interactives.dallasnews.com/2017/dallas-hidden-history/"
     },
     {
+        "types": "Feature design",
+        "head": "The helmet conundrum",
+        "sub": "As the designer and developer for this project, I was also challenged to step up as the unofficial project manager, ensuring that illustrators, writers, data reporters and photographers would create one, cohesive investigative package.<br><br>When designing this, I was thoughtful about how to indicate that this was a chaptered story. You'll see my use of menus (at the beginning) and chapter cards (at the end) as a solution for moving users through the package.",
+        "url": "http://interactives.dallasnews.com/2016/concussions/"
+    },
+    {
         "types": "Feature design, illustration & data viz",
-        "head": "The rise and fall of the 'frack master'",
-        "sub": "A chaptered, long-form reveal of how a Dallas tech CEO became a global expert on hydraulic fracturing",
+        "head": "The rise and fall of the 'Frack Master'",
+        "sub": "Designing and coding an experience that kept readers scrolling was the greatest challange of this longer piece. To solve this problem, I created a naviation that updated as readers scrolled deeper in the story to indicate progress.",
         "url": "http://interactives.dallasnews.com/2016/frack-master/"
     },
     {

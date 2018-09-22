@@ -27,7 +27,7 @@ gulp.task('browserSync', () => {
 });
 
 // compiles sass to css
-gulp.task('sass', function() {
+gulp.task('sass', () => {
   // gets all files ending with .scss in build/sass
   return gulp.src('build/sass/**/*.scss')
     .pipe(sass())

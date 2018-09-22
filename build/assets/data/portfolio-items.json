@@ -2,49 +2,49 @@
     {
         "types": "Scrollytelling, data viz & illustration",
         "head": "How Americans describe what society values (and doesn’t) in each gender",
-        "sub": "This project challenged me as a designer, developer and storyteller.<br><br> Ensuring that the writing and visual flow were seamless, I introduced <a href='https://www.figma.com/'>Figma</a> as a new tool and workflow for the project's writer, data scientist and editors, who could write within the designs and iterate alongside me in live time.<br><br> I also learned to write custom, animated <a href='https://d3js.org/'>d3.js</a> charts from scratch to build this data visualization. And I taught myself <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> to check for scrolling and visibility interactions.<br><br>",
+        "sub": "This project challenged me as a designer, developer and storyteller.<br><br> Ensuring that the writing and visual flow were seamless, I introduced <a href='https://www.figma.com/'>Figma</a> as a new tool and workflow for the project's writer, data scientist and editors, who could write within the designs and iterate alongside me in live time.<br><br> I also learned to write custom, animated <a href='https://d3js.org/'>d3.js</a> charts from scratch to build this data visualization. And I taught myself <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> to trigger animations.",
         "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
     },
     {
         "types": "Interactive map application",
         "head": "Dallas' hidden history",
-        "sub": "Inspired by Google's 2016 UI designs and excited to experiment with node.js and <a href='https://www.mapbox.com/mapbox-gl-js/api/'>Mapbox's API</a>, I stepped up to build this map application requested by the Dallas Morning News opinion desk.<br><br> I had never created anything with user input (nor anything that had a back-end approval UI) so imagining use-case scenarios and planning for the dynamic nature of the page was an exciting exercise.",
+        "sub": "Inspired by Google's UI designs and excited to experiment with node.js and <a href='https://www.mapbox.com/mapbox-gl-js/api/'>Mapbox's API</a>, I stepped up to build this map application that was requested by the Dallas Morning News opinion desk.<br><br> I had never created anything with user input (nor anything that had a back-end approval UI) so imagining use-case scenarios and planning for the dynamic nature of the page was an exciting exercise.",
         "url": "https://interactives.dallasnews.com/2017/dallas-hidden-history/"
     },
     {
         "types": "Feature design",
         "head": "The helmet conundrum",
-        "sub": "As the designer and developer for this project, I was also challenged to step up as the unofficial project manager, ensuring that illustrators, writers, data reporters and photographers would create one, cohesive investigative package.<br><br>When designing this, I was thoughtful about how to indicate that this was a chaptered story. You'll see my use of menus (at the beginning) and chapter cards (at the end) as a solution for moving users through the package.",
+        "sub": "As the designer and developer for this project, I also stepped up as the unofficial project manager, ensuring that illustrators, writers, data reporters and photographers could create one, cohesive investigative package.<br><br>When designing this, I was thoughtful about how to indicate that this was a chaptered story. You'll see my use of menus (at the beginning) and chapter cards (at the end) as a solution for moving users through the package.",
         "url": "http://interactives.dallasnews.com/2016/concussions/"
+    },
+    {
+        "types": "D3 Map Embed",
+        "head": "Interactive bubble map of countries by state religion status",
+        "sub": "This project strengthened my <a href='https://d3js.org/'>d3.js</a> and data manipulation skills, as I adapted a <a href='http://bl.ocks.org/bycoffe/3230965'>base d3 project</a> and built a lookup interface that synced the data with <a href='https://www.firebase.com/'>Firebase</a>.",
+        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
         "types": "Feature design, illustration & data viz",
         "head": "The rise and fall of the 'Frack Master'",
-        "sub": "Designing and coding an experience that kept readers scrolling was the greatest challange of this longer piece. To solve this problem, I created a naviation that updated as readers scrolled deeper in the story to indicate progress.",
+        "sub": "Designing and coding an experience that kept readers scrolling was the greatest challenge of this longer piece. To tackle this problem, I created a navigation that indicated progress as readers scrolled deeper in the story. I also created section headers to tease the upcoming content and provide visual relief between text wells.",
         "url": "http://interactives.dallasnews.com/2016/frack-master/"
-    },
-    {
-        "types": "Interactive Map Embed",
-        "head": "Middle East Africa leads in share of official religions",
-        "sub": "A visual lookup of countries by state religion status",
-        "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
         "types": "Interactive chart embed",
         "head": "The 100 highest-paid CEOs in Dallas-Fort Worth",
-        "sub": "Their median pay package totaled $4.07 million last year — See who's on the list in this D3 graphic",
+        "sub": "I learned to use AJAX and <a href='https://d3js.org/'>d3.js</a> to make a simple chart (with filtering buttons!).",
         "url": "http://interactives.dallasnews.com/2016/ceo-pay/"
     },
     {
         "types": "Interactive feature design",
-        "head": "Comfort is golden",
-        "sub": "Meet the retrievers brought to Dallas to help us cope after the downtown ambush",
-        "url": "http://interactives.dallasnews.com/2016/comfort-dogs/"
+        "head": "From farm to your table",
+        "sub": "This project could have been a simple recipe listicle. But in the spirit of learning, I created an interactive, visually fun layout and sticky navigation that allowed me to write a project in Sass for the first time, and to practice JavaScript loops and conditionals.",
+        "url": "http://interactives.dallasnews.com/2016/farm-to-table/"
     },
     {
         "types": "Interactive feature design",
-        "head": "From farm to your table",
-        "sub": "Explore locally-sourced dishes by Chef Graham Dodds on this interactive recipe page",
-        "url": "http://interactives.dallasnews.com/2016/farm-to-table/"
+        "head": "Meet the dogs who helped us cope after the Dallas police ambush",
+        "sub": "I learned to implement some simple flip-card designs using CSS animations for a heart-warming feature to follow the police shooting.",
+        "url": "http://interactives.dallasnews.com/2016/comfort-dogs/"
     }
 ]

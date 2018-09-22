@@ -2,21 +2,24 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Kristi Walker's design and dev work",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcclatchy/honeycomb.git"
+    "url": "git+https://github.com/kristiwalker/portfolio.git"
   },
   "keywords": [
-    "honeycomb",
-    "mcclatchy",
-    "template"
+    "Kristi Walker",
+    "portfolio",
+    "designer",
+    "front-end",
+    "web developer",
+    "storyteller"
   ],
   "bugs": {
-    "url": "https://github.com/mcclatchy/honeycomb/issues"
+    "url": "https://github.com/kristiwalker/portfolio/issues"
   },
   "author": "Kristi Walker",
   "license": "ISC",

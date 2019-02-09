@@ -6,6 +6,24 @@
         "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
     },
     {
+        "types": "Email template & graphics",
+        "head": "Pew Research Center's first mini-course: U.S. immigration",
+        "sub": "<a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=8300797f78&e=fa35e06916'>Intro</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=6c7dde03e3'>1</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=a9e724f458https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=6c7dde03e3'>2</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=b106d8928e'>3</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=c5695c4106'>4</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=420348c114'>5</a> | <a href='https://us1.campaign-archive.com/?u=434f5d1199912232d416897e4&id=478ad0ad9b&e=ef98a9c327'>Congrats</a><br><br>I had never designed for email before, so this product began with extensive research. I signed up for several email mini-courses and newsletters, studied the (many) limitations of email clients, read up on <a href='https://mailchimp.com/help/create-editable-content-areas-with-mailchimps-template-language/'>Mailchimp's templating semantics</a>, and began learning <a href='https://foundation.zurb.com/emails.html'>Foundation's email framework</a>.<br><br> Using <a href='https://www.figma.com/'>Figma</a>, I worked alongside writers and producers to create a <a href='https://www.figma.com/file/ktFoyLYsUIO1lXDG5hwEHR/Layout-mockups-%2B-final?node-id=1296%3A0'>live, transparent design process</a> that evolved simultaneously with the editorial content and that carefully considered things like perceived scroll length. While my primary role was to brand, design and code a new product, I also assisted with content direction and user experience strategy.<br><br> This course has received overwhelmingly positive feedback, with more than 8,000 people signing up in the first three months — the majority of which have completed the course.",
+        "url": "http://www.pewresearch.org/fact-tank/2018/10/16/want-to-understand-u-s-immigration-weve-got-an-email-course-for-you/"
+    },
+    {
+        "types": "Open-ended quote display",
+        "head": "The Meaning of Life: 100 quotes from Americans on what keeps them going",
+        "sub": "This was the most emotional project I've ever worked on. Each quote was so personal, so raw. And helping researchers curate, design and develop a quote-reading experience brought me my own sense of meaning.<br><br> Using open-ended responses, hand-picked photos, simple UI and object-oriented programming, this page offers a one-of-a-kind glimpse into the American spirit.",
+        "url": "http://www.pewforum.org/interactives/what-keeps-us-going/"
+    },
+    {
+        "types": "Embeddable scrollytelling maps",
+        "head": "Organic farming is on the rise in the U.S.",
+        "sub": "This is the second iteration of an embeddable, scrollytelling map template using <a href='<a href='https://d3js.org/'>d3.js</a> and <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> that I've been building for Pew Research Center. This, and an <a href='http://www.pewresearch.org/fact-tank/2018/10/25/6-facts-about-english-language-learners-in-u-s-public-schools/'>earlier version</a> (that used static images instead of animated SVG) gives users a paced walk-through of interesting findings in a large, geographically-oriented dataset.",
+        "url": "http://www.pewresearch.org/fact-tank/2019/01/10/organic-farming-is-on-the-rise-in-the-u-s/"
+    },
+    {
         "types": "Interactive map application",
         "head": "Dallas' hidden history",
         "sub": "Inspired by Google's UI designs and excited to experiment with node.js and <a href='https://www.mapbox.com/mapbox-gl-js/api/'>Mapbox's API</a>, I stepped up to build this map application that was requested by the Dallas Morning News opinion desk.<br><br> I had never created anything with user input (nor anything that had a back-end approval UI) so imagining use-case scenarios and planning for the dynamic nature of the page was an exciting exercise.",
@@ -24,12 +42,6 @@
         "url": "http://www.pewforum.org/2017/10/03/many-countries-favor-specific-religions-officially-or-unofficially/#js-state-religions-bubble-map"
     },
     {
-        "types": "Feature design, illustration & data viz",
-        "head": "The rise and fall of the 'Frack Master'",
-        "sub": "Designing and coding an experience that kept readers scrolling was the greatest challenge of this longer piece. To tackle this problem, I created a navigation that indicated progress as readers scrolled deeper in the story. I also created section headers to tease the upcoming content and provide visual relief between text wells.",
-        "url": "http://interactives.dallasnews.com/2016/frack-master/"
-    },
-    {
         "types": "Interactive chart embed",
         "head": "The 100 highest-paid CEOs in Dallas-Fort Worth",
         "sub": "I learned to use AJAX and <a href='https://d3js.org/'>d3.js</a> to make a simple chart (with filtering buttons!).",
@@ -40,11 +52,5 @@
         "head": "From farm to your table",
         "sub": "This project could have been a simple recipe listicle. But in the spirit of learning, I created an interactive, visually fun layout and sticky navigation that allowed me to write a project in Sass for the first time, and to practice JavaScript loops and conditionals.",
         "url": "http://interactives.dallasnews.com/2016/farm-to-table/"
-    },
-    {
-        "types": "Interactive feature design",
-        "head": "Meet the dogs who helped us cope after the Dallas police ambush",
-        "sub": "I learned to implement some simple flip-card designs using CSS animations for a heart-warming feature to follow the police shooting.",
-        "url": "http://interactives.dallasnews.com/2016/comfort-dogs/"
     }
 ]

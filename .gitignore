@@ -1,1 +1,5 @@
 build/assets/images/**/*.psd
+node_modules
+package-lock.json
+*.DS_Store
+build/.sass-cache

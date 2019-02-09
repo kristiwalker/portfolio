@@ -1,0 +1,14 @@
+[
+    {
+        "types": "Interactive feature design",
+        "head": "Meet the dogs who helped us cope after the Dallas police ambush",
+        "sub": "I learned to implement some simple flip-card designs using CSS animations for a heart-warming feature to follow the police shooting.",
+        "url": "http://interactives.dallasnews.com/2016/comfort-dogs/"
+    },
+    {
+        "types": "Feature design, illustration & data viz",
+        "head": "The rise and fall of the 'Frack Master'",
+        "sub": "Designing and coding an experience that kept readers scrolling was the greatest challenge of this longer piece. To tackle this problem, I created a navigation that indicated progress as readers scrolled deeper in the story. I also created section headers to tease the upcoming content and provide visual relief between text wells.",
+        "url": "http://interactives.dallasnews.com/2016/frack-master/"
+    }
+]

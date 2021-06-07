@@ -19,18 +19,18 @@ gulp.task("default", (callback) => {
 gulp.task("browserSync", () => {
   browserSync.init({
     server: {
-      baseDir: "dist",
+      baseDir: "build",
     },
   });
 });
 
 // compiles sass to css
-gulp.task("sass", function () {
+gulp.task("sass", () => {
   // gets all files ending with .scss in build/sass
   return gulp
-    .src("src/sass/**/*.scss")
+    .src("build/sass/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("build/css"))
     .pipe(
       browserSync.reload({
         stream: true,
@@ -40,13 +40,13 @@ gulp.task("sass", function () {
 
 gulp.task("babel", () =>
   gulp
-    .src("src/scripts/custom.js")
+    .src("build/scripts/custom.js")
     .pipe(
       babel({
         presets: ["@babel/env"],
       })
     )
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("build/scripts/babel"))
     .pipe(
       browserSync.reload({
         stream: true,
@@ -55,10 +55,10 @@ gulp.task("babel", () =>
 );
 
 gulp.task("watch", () => {
-  gulp.watch("src/sass/**/*.scss", ["sass"]);
-  gulp.watch("src/scripts/**/*.js", ["babel"]);
-  gulp.watch("src/*.html", browserSync.reload);
-  gulp.watch("src/scripts/**/*.js", browserSync.reload);
+  gulp.watch("build/sass/**/*.scss", ["sass"]);
+  gulp.watch("build/scripts/**/*.js", ["babel"]);
+  gulp.watch("build/*.html", browserSync.reload);
+  gulp.watch("build/scripts/**/*.js", browserSync.reload);
 });
 
 /*******************************************************************************

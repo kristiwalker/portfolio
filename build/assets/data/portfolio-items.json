@@ -1,7 +1,7 @@
 [
   {
     "types": "Strategy, UI design, data viz & front-end development",
-    "head": "Confidential, proprietary work",
+    "head": "Confidential, proprietary products and experiences",
     "sub": "While the work I do at Capital One is not publicly shareable in its full form, I love sharing my processes and philosophies. All of my work advances experience quality, builds collaborative partnerships, and delivers shared results for associate-facing data products, platforms and experiences. Reach out if you'd like to hear more.",
     "url": ""
   },
@@ -26,7 +26,7 @@
   {
     "types": "Embeddable scrollytelling maps",
     "head": "Organic farming is on the rise in the U.S.",
-    "sub": "This is the second iteration of an embeddable, scrollytelling map template using <a href='<a href='https://d3js.org/'>d3.js</a> and <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> that I've been building for Pew Research Center. This, and an <a href='http://www.pewresearch.org/fact-tank/2018/10/25/6-facts-about-english-language-learners-in-u-s-public-schools/'>earlier version</a> (that used static images instead of animated SVG) gives users a paced walk-through of interesting findings in a large, geographically-oriented dataset.",
+    "sub": "This is the second iteration of an embeddable, scrollytelling map template using <a href='<a href='https://d3js.org/'>d3.js</a> and <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> that I've built for Pew Research Center. This, and an <a href='http://www.pewresearch.org/fact-tank/2018/10/25/6-facts-about-english-language-learners-in-u-s-public-schools/'>earlier version</a> (that used static images instead of animated SVG) gives users a paced walk-through of interesting findings in a large, geographically-oriented dataset.",
     "url": "http://www.pewresearch.org/fact-tank/2019/01/10/organic-farming-is-on-the-rise-in-the-u-s/"
   },
   {

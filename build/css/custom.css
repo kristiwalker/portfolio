@@ -33,7 +33,7 @@ p {
 
 a,
 a:visited {
-  color: #BF2929;
+  color: #bf2929;
   text-decoration: none; }
 
 a:hover {
@@ -55,7 +55,7 @@ ul {
   color: #333; }
 
 .accented {
-  color: #BF2929; }
+  color: #bf2929; }
 
 .background-container {
   height: auto;
@@ -184,17 +184,20 @@ ul.portfolio-item-type {
     margin: 0;
     color: #333; }
     ul.portfolio-item-type li:not(:first-child):before {
-      content: '/';
+      content: "/";
       padding: 0 10px 0 0; }
+
+p.portfolio-item-head {
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  color: #333; }
 
 p.portfolio-item-head a {
   cursor: pointer;
-  font-weight: 700;
-  font-size: 1.8em;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  line-height: 1.3em;
   z-index: 2; }
   p.portfolio-item-head a span {
     cursor: pointer;
@@ -203,12 +206,12 @@ p.portfolio-item-head a {
     background-repeat: no-repeat;
     background-size: 0 100%;
     transition: background-size 1s, color 1s;
-    color: #BF2929;
+    color: #bf2929;
     z-index: 1; }
     p.portfolio-item-head a span:hover {
       cursor: pointer;
       background-size: 100% 100%;
-      background-image: linear-gradient(transparent calc(100% - 2px), black 10px); }
+      background-image: linear-gradient(transparent calc(100% - 2px), #333 10px); }
   p.portfolio-item-head a:visited {
     color: inherit; }
 
@@ -268,5 +271,5 @@ footer ul li svg {
   footer ul li svg:hover {
     z-index: 2;
     cursor: pointer;
-    fill: #BF2929;
+    fill: #bf2929;
     transition: 0.3s ease all; }

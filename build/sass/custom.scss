@@ -19,13 +19,13 @@
 $mobile: 425px;
 $tablet: 768px;
 
-$sans: 'Open Sans', helvetica, arial, sans-serif;
+$sans: "Open Sans", helvetica, arial, sans-serif;
 
 $regular-weight: 400;
 $medium-weight: 700;
 $heavy-weight: 800;
 
-$accent: #BF2929;
+$accent: #bf2929;
 $dark: #333;
 $light: #666;
 
@@ -117,17 +117,26 @@ header {
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-3000.jpg");
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 1)
+      ),
+      url("../assets/images/shenandoah/shenandoah-3000.jpg");
     min-height: 1300px;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {
     @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
-      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-#{$imgSize}.jpg");
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 1)
+        ),
+        url("../assets/images/shenandoah/shenandoah-#{$imgSize}.jpg");
     }
   }
   // default img for mobile
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url("../assets/images/shenandoah/shenandoah-1200.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)),
+    url("../assets/images/shenandoah/shenandoah-1200.jpg");
   @media only screen and (max-width: $mobile) {
     background: none;
     min-height: 300px;
@@ -171,14 +180,24 @@ main {
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url("../assets/images/great-falls/great-falls-3000.jpg");
+    background: linear-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 1)
+      ),
+      url("../assets/images/great-falls/great-falls-3000.jpg");
     min-height: 2000px;
     align-items: center;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {
     @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
-      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url("../assets/images/great-falls/great-falls-#{$imgSize}.jpg");
+      background: linear-gradient(
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0.85),
+          rgba(255, 255, 255, 1)
+        ),
+        url("../assets/images/great-falls/great-falls-#{$imgSize}.jpg");
     }
   }
   // default img for mobile
@@ -224,20 +243,24 @@ ul.portfolio-item-type {
     color: $dark;
 
     &:not(:first-child):before {
-      content: '/';
+      content: "/";
       padding: 0 10px 0 0;
     }
   }
 }
 
-p.portfolio-item-head a {
-  cursor: pointer;
+p.portfolio-item-head {
   font-weight: $medium-weight;
   font-size: $regular-font;
+  line-height: 1.3em;
+  color: $dark;
+}
+
+p.portfolio-item-head a {
+  cursor: pointer;
   text-decoration: none;
   position: relative;
   display: inline-block;
-  line-height: 1.3em;
   z-index: 2;
 
   span {
@@ -255,7 +278,10 @@ p.portfolio-item-head a {
       cursor: pointer;
       // animates in black underline
       background-size: 100% 100%;
-      background-image: linear-gradient(transparent calc(100% - 2px), black 10px);
+      background-image: linear-gradient(
+        transparent calc(100% - 2px),
+        $dark 10px
+      );
     }
   }
 
@@ -284,17 +310,32 @@ footer {
   margin-right: auto;
   // show 3000 img for >= 1500 screen
   @media only screen and (min-width: 1500px) {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-3000.jpg");
+    background: linear-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("../assets/images/canyonlands/canyonlands-3000.jpg");
     min-height: 800px;
   }
   // change img size depending on screen size
   @each $imgSize in $imgSizes {
     @media only screen and (min-width: #{$imgSize / 2}px) and (max-width: #{($imgSize + 600)/ 2}px) {
-      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-#{$imgSize}.jpg");
+      background: linear-gradient(
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url("../assets/images/canyonlands/canyonlands-#{$imgSize}.jpg");
     }
   }
   // default img for mobile
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../assets/images/canyonlands/canyonlands-1200.jpg");
+  background: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../assets/images/canyonlands/canyonlands-1200.jpg");
 }
 
 footer.background-container {

@@ -9,7 +9,7 @@
     "types": "Scrollytelling, data viz & illustration",
     "head": "How Americans describe what society values (and doesn’t) in each gender",
     "sub": "This project challenged me as a designer, developer and storyteller.<br><br> Ensuring that the writing and visual flow were seamless, I introduced <a href='https://www.figma.com/'>Figma</a> as a new tool and workflow for the project's writer, data scientist and editors, who could write within the designs and iterate alongside me in live time.<br><br> I also learned to write custom, animated <a href='https://d3js.org/'>d3.js</a> charts from scratch to build this data visualization. And I taught myself <a href='https://semantic-ui.com/behaviors/visibility.html'>Semantic UI's visibility callbacks</a> to trigger animations.",
-    "url": "http://www.pewsocialtrends.org/interactives/strong-men-caring-women/"
+    "url": "https://www.kristiwalker.com/strong-men-caring-women/mobile-view"
   },
   {
     "types": "Email template & graphics",

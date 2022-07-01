@@ -224,6 +224,8 @@ p.portfolio-item-sub {
   font-size: 1.6em;
   margin: 0 0 20px;
   line-height: 1.3em; }
+  p.portfolio-item-sub span {
+    font-size: 0.9em; }
 
 /*------------------------------------*\
   #FOOTER
